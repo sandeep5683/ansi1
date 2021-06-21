@@ -28,4 +28,8 @@
         name: php-cli
         update_cache: yes
         state: present
+    - name: copy info.php
+      copy:
+        src: info.php
+        dest: /var/www/html/info.php
 
